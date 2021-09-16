@@ -1,4 +1,5 @@
 <?php
+
 echo "Ejercicio1.C <br>";
 $nombre = $_GET['nom'];
 if (is_null($nombre)) {

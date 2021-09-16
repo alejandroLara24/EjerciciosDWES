@@ -1,4 +1,5 @@
 <?php
+
 print_r($_GET);
 $suma = $_GET['x'] + $_GET['y'];
 $resta = $_GET['x'] - $_GET['y'];

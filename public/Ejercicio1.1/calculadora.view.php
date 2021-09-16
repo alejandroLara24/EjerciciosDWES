@@ -15,7 +15,7 @@
             "Division de $_GET[x] y $_GET[y] = $division <br>".
             "Ordenador que hace la petición: $ordenadorPeticion <br>".
             "Parámetros de la peticón: $paramPeticion <br>".
-            "Ruta del sitio web en el ordenador local: $rutaSitioWeb <br>";
+            "Ruta del sitio web en el ordenador local: $rutaSitioWeb";
         ?>
 
     </h2>
