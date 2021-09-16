@@ -3,12 +3,10 @@
 echo "Ejercicio1.C <br>";
 $nombre = $_GET['nom'];
 if (is_null($nombre)) {
-    echo "Alejandro Lara Moncho";
-} else {
-    echo $nombre;
+    $nombre = 'Alejandro Lara Moncho';
 }
 
-echo "<br>".trim($nombre, "/")."<br>";
+echo trim($nombre, "/")."<br>";
 echo strlen(trim($nombre))."<br>";
 echo strtoupper($nombre)."<br>";
 echo strtolower($nombre)."<br>";
