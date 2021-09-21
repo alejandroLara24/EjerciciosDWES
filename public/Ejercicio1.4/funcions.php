@@ -31,8 +31,8 @@ function contrasenyaSegura($contrasenya) {
 }
 
 function insert($nombreTabla,$arrayNombresYValores) {
-    $sentenciaSQL = "INSERT INTO %s (%s) VALUES (%s)";
+    $sentenciaSQL = "INSERT INTO %s (%s) VALUES (\"%s\")";
     $nombreCampos = array_keys($arrayNombresYValores);
     $valoresAIntroducir = array_values($arrayNombresYValores);
-    echo sprintf($sentenciaSQL,$nombreTabla,implode(",",$nombreCampos),implode(",",$valoresAIntroducir));
+    echo sprintf($sentenciaSQL,$nombreTabla,implode(",",$nombreCampos),implode("\",\"",$valoresAIntroducir));
 }
