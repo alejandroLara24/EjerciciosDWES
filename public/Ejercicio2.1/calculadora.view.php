@@ -23,7 +23,13 @@
             <br>
             <label for="operacion">Operacion a realizar(suma, resta, multiplicacion o division)</label>
             <br>
-            <input type="text" name="operacion">
+            <select name="operacion">
+                <option value="">--</option>
+                <option value="suma">Suma</option>
+                <option value="resta">Resta</option>
+                <option value="multiplicacion">Multiplicacion</option>
+                <option value="division">Division</option>
+            </select>
             <br>
             <input type="submit">
         </form>

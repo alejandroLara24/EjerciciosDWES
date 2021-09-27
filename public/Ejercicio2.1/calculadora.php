@@ -17,7 +17,7 @@
         }
         $resultado = "El resultado de la ".$_POST['operacion']." entre ".$_POST['operando1']." y ".$_POST['operando2']." es: ".calculadora($_POST['operacion'],$_POST['operando1'],$_POST['operando2']);
     }
-    require('views/calculadora.view.php');
+    require('calculadora.view.php');
 
 
     function calculadora($operacion,$x,$y) {
