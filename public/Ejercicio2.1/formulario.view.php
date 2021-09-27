@@ -9,7 +9,7 @@
 </head>
 <body>
 <header>
-    <form method="post" action="formulario.php">
+    <form method="post" action="formulario.php" enctype="multipart/form-data">
         <label for="nombre">Nombre</label>
         <br>
         <input type="text" name="nombre">
