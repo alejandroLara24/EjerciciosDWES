@@ -1,5 +1,4 @@
 <?php
-session_start();
 $team = $_SESSION['equipo'];
 ?>
 <!DOCTYPE html>

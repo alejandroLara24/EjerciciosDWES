@@ -52,7 +52,7 @@ class Team {
     public function render() {
         require_once("team.view.php");
     }
-    public function signPlayer(Player $player) {
+    public function signPlayer(Member $player) {
         array_push($this->players, $player);
     }
 }

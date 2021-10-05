@@ -1,14 +1,18 @@
 <?php
+    require('../../kernel.php');
     require_once('Player.php');
+    require_once('Trainer.php');
     require_once('Team.php');
     $fp = fopen("plantillas.csv","r");
     $listadoJugadores = [];
+    $hola = 0;
     while (($data = fgetcsv($fp, 0,";")) == true) {
         $num = count($data);
         $lineaFiltrada = array_filter($data,"filtrado");
-        if (!is_null($lineaFiltrada[1])){
+        if (isset($lineaFiltrada[1])){
             array_push($listadoJugadores,$lineaFiltrada);
         }
+        $hola++;
     }
     fclose($fp);
     unset($listadoJugadores[0]);
@@ -21,6 +25,7 @@
     }
 
     $equipo = new Team('Atletico de Madrid',$playersList);
+    $equipo->signPlayer(new Trainer('Alejandro','24/03/2001','España',3,6,'Tontito'));
 
     session_start();
     $_SESSION['equipo'] = $equipo;
@@ -38,4 +43,11 @@
             $arrAux[$key] = strtolower($arrAux[$key]);
         }
             array_multisort($arrAux, $order, $arrIni);
-        }
+    }
+function dd(...$variable){
+    foreach ($variable as $var){
+        var_dump($var);
+        echo "<br/>";
+    }
+    die();
+}
