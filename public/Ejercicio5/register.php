@@ -20,7 +20,7 @@ if (isPost() && cfsr()){
 
     if (!count($errors)){
         $password = password_hash($password,PASSWORD_DEFAULT );
-        $query->insert('users',compact('name','email','password'));
+        $query->insert('users1',compact('name','email','password'));
         header('Location: /Ejercicio5/login.php');
     }
 }

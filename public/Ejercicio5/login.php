@@ -33,7 +33,7 @@ if (isPost() && cfsr()){
     //else {
         $password = isRequired('password',$errors);
         if (!count($errors)){
-            $user = $query->login('users',$email,$password);
+            $user = $query->login('users1',$email,$password);
             $_SESSION['user'] = serialize($user);
             header('Location: /Ejercicio5/ahorcado.php');
         }
