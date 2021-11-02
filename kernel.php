@@ -3,6 +3,7 @@
 
     require(dirname(__FILE__) . "/vendor/autoload.php");
     $query = require('bootstrap.php');
+    session_start();
 
     use Whoops\Run;
     use Whoops\Handler\PrettyPageHandler;
